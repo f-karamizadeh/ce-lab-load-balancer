@@ -1,0 +1,8 @@
+HealthCheckProtocol: HTTP
+HealthCheckPort: traffic-port (80)
+HealthCheckPath: /health
+HealthCheckIntervalSeconds: 10
+HealthCheckTimeoutSeconds: 5
+HealthyThresholdCount: 2
+UnhealthyThresholdCount: 2
+MatcherHttpCode: 200

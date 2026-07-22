@@ -1,0 +1,9 @@
+Listener Port: 80
+Listener Protocol: HTTP
+Default Actions:
+  - Type: forward
+    TargetGroupArn: arn:aws:elasticloadbalancing:eu-north-1:204146947593:targetgroup/web-servers-tg/986097ccb8006f83
+Rules:
+  - Priority: default
+    Conditions: None
+    Actions: Forward to web-servers-tg
